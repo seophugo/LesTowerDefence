@@ -329,8 +329,8 @@ Transform:
   m_GameObject: {fileID: 194672956}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.9035, y: 0.2997, z: -8.3454}
-  m_LocalScale: {x: 18.456821, y: 0.11943681, z: 1.4292426}
+  m_LocalPosition: {x: -11.9035, y: 0.2997, z: -8.9894}
+  m_LocalScale: {x: 18.456821, y: 0.11943681, z: 2.717276}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -423,13 +423,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.037894312, y: 0.7060907, z: -0.037894238, w: 0.7060906}
-  m_LocalPosition: {x: -14.798, y: 2.397, z: 8.28}
+  m_LocalRotation: {x: 0.14117014, y: 0.7139908, z: -0.14543061, w: 0.67017764}
+  m_LocalPosition: {x: -25.6, y: 8.35, z: 0.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 6.144, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 23.384, y: 93.712, z: 0.416}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,7 +506,8 @@ MonoBehaviour:
   _rayLayer:
     serializedVersion: 2
     m_Bits: 64
-  _tower: {fileID: 5169019002472810350, guid: 72b37098186e054499e655ff04472a43, type: 3}
+  _selectedMaterial: {fileID: 2100000, guid: 0a054b22bd79d5b4aaf4580d310952bb, type: 2}
+  _allowMultipleSpawns: 0
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,7 +839,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 903891740}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 330585549}
+        m_TargetAssemblyTypeName: Mousecheck, Assembly-CSharp
+        m_MethodName: SpawnTower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5169019002472810350, guid: 72b37098186e054499e655ff04472a43, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &903891740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -959,7 +972,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 986325189}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 330585549}
+        m_TargetAssemblyTypeName: Mousecheck, Assembly-CSharp
+        m_MethodName: SpawnTower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3267450838901682453, guid: b578eb35acb442b4ea079e333f802fa5, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &986325189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1055,7 +1080,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 'Sphere
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1191,7 +1218,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 'Kubus
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1584,8 +1613,8 @@ Transform:
   m_GameObject: {fileID: 1452414852}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -2.25, y: 0.2997, z: 9.0357}
-  m_LocalScale: {x: 36.088623, y: 0.11943681, z: 1.4292426}
+  m_LocalPosition: {x: -1.6819, y: 0.2997, z: 8.3684}
+  m_LocalScale: {x: 37.423203, y: 0.11943681, z: 2.5654905}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1672,7 +1701,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2005825148}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 330585549}
+        m_TargetAssemblyTypeName: Mousecheck, Assembly-CSharp
+        m_MethodName: SpawnTower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6787535808879866048, guid: 493b166ef3317a7438b3e94ffc3da843, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Mousecheck, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2005825148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1768,7 +1821,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 'Krijt
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

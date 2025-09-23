@@ -19,18 +19,18 @@ public class EnemyMovement : MonoBehaviour
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
         if (Vector3.Distance(transform.position, target.position) <= 0.2f)
         {
-            GetNextWayPoint();
+            GetNextWaypoint();
         }
     }
     public void GetNextWaypoint()
     {
-        if (wavepointIndex >= WaypointsHandler.Waypoints.Count - 1)
+        if (wavepointIndex >= WayPoints.Waypoints.Count - 1)
         {
             Destroy(gameObject);
             return;
         }
         wavepointIndex++;
-        target = WaypointsHandler.Waypoints[wavepointIndex];
+        target = WayPoints.Waypoints[wavepointIndex];
     }
 }
 
